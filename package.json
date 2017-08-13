@@ -3,7 +3,7 @@
   "description": "Presentation on the JVM",
   "homepage": "https://github.com/matthewfranglen/jvm-presentation",
   "scripts": {
-    "start": "webpack serve"
+    "start": "grunt serve"
   },
   "author": {
     "name": "Matthew Franglen"
@@ -13,7 +13,10 @@
     "url": "https://github.com/matthewfranglen/jvm-presentation.git"
   },
   "devDependencies": {
-    "webpack": "^3.5.4",
-    "webpack-dev-server": "^2.7.1"
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-watch": "^1.0.0"
   }
 }
