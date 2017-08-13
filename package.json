@@ -1,0 +1,19 @@
+{
+  "name": "JVM",
+  "description": "Presentation on the JVM",
+  "homepage": "https://github.com/matthewfranglen/jvm-presentation",
+  "scripts": {
+    "start": "webpack serve"
+  },
+  "author": {
+    "name": "Matthew Franglen"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthewfranglen/jvm-presentation.git"
+  },
+  "devDependencies": {
+    "webpack": "^3.5.4",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
