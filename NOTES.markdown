@@ -90,3 +90,33 @@ There are also a few instructions for a number of more specialized tasks such as
 There are different operations for the different primitive types. E.G. int / long / float etc.
 
 ### JIT
+
+Java bytecode is interpreted by the JVM. Interpreted languages are slow.
+
+Java is fast. It is fast because of the JIT Compiler.
+
+The JIT compiler compiles "hot" (frequently used) code to machine code at runtime.
+
+### Greatest Benefits
+
+This compilation is done at run time because it produces the best outcome:
+
+ * Dead code elimination and optimisation based on possible values that the running code can generate
+ * Machine specific code
+
+The JIT compiler is also able to inline code and perform general optimisations.
+
+This all takes time. So the time is best spent where it will have the greatest benefit.
+
+100 method invocations.
+10,000 times round a loop.
+
+The code is hot swapped in.
+
+### De Optimisation
+
+Not all classes are loaded as the application starts.
+It will never be possible to do so (can load generated class names).
+
+Loading new classes can change the possible values the program can produce.
+Code that was optimised based on those values will be de optimised.
