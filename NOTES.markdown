@@ -71,6 +71,8 @@ Bytecode
 Bytecode is the binary representation of Java code.
 It is still an interpreted language. It is interpreted by the JVM.
 
+### Not Scary
+
 It works like assembly using instructions and registers. Registers are stacks.
 
 Instructions fall into a number of broad groups:
@@ -84,3 +86,5 @@ Instructions fall into a number of broad groups:
  * Method invocation and return (e.g. invokespecial, areturn)
 
 There are also a few instructions for a number of more specialized tasks such as exception throwing, synchronization, etc.
+
+There are different operations for the different primitive types. E.G. int / long / float etc.
