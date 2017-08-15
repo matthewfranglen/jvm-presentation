@@ -88,3 +88,5 @@ Instructions fall into a number of broad groups:
 There are also a few instructions for a number of more specialized tasks such as exception throwing, synchronization, etc.
 
 There are different operations for the different primitive types. E.G. int / long / float etc.
+
+### JIT
