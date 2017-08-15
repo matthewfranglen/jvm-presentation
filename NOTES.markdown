@@ -51,3 +51,16 @@ A normal class loader will ask it's parent to load the class first.
 This behaviour is under your control. Changing it is risky - make sure you can load standard classes safely at the very least.
 
 Normally the search only goes up. To use your class loader you must manually trigger it.
+
+### Security
+
+A class that is loaded may not be trustworthy. Answers generated from stack overflow could be wrong.
+
+The capabilities of a class that has been loaded can be restricted by the loader.
+This uses the Java Security Model.
+You can define a custom set of permissions that apply to your classes.
+
+This can prevent malicious code from doing things like reading or writing files or creating network connections.
+(Outside current presentation scope to cover the Java Security Model).
+
+This is how Applets work.
