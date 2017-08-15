@@ -64,3 +64,23 @@ This can prevent malicious code from doing things like reading or writing files 
 (Outside current presentation scope to cover the Java Security Model).
 
 This is how Applets work.
+
+Bytecode
+--------
+
+Bytecode is the binary representation of Java code.
+It is still an interpreted language. It is interpreted by the JVM.
+
+It works like assembly using instructions and registers. Registers are stacks.
+
+Instructions fall into a number of broad groups:
+
+ * Load and store (e.g. aload_0, istore)
+ * Arithmetic and logic (e.g. ladd, fcmpl)
+ * Type conversion (e.g. i2b, d2i)
+ * Object creation and manipulation (new, putfield)
+ * Operand stack management (e.g. swap, dup2)
+ * Control transfer (e.g. ifeq, goto)
+ * Method invocation and return (e.g. invokespecial, areturn)
+
+There are also a few instructions for a number of more specialized tasks such as exception throwing, synchronization, etc.
